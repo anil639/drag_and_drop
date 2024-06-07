@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Image To Do List</title>
+  </head>
+
+  <body>
+    <div class="carousel">
+      <div class="carousel-items active">
+        <img src="carousel1.jpg" alt="Image 1" />
+      </div>
+      <div class="carousel-items">
+        <img src="carousel2.jpg" alt="Image 2" />
+      </div>
+    </div>
+
+    <div class="app-container">
+      <!-- Define your rest of the things of the Image TODO List app here -->
+      <div class="card">
+        <h1 class="upload_img">Upload Your Image</h1>
+        <div class="drop-upload" id="dropzone">
+          <input type="file" id="fileInput" accept="image/*" />
+          <label for="fileInput"
+            >Drop and Upload <span class="click_here">Click Here</span></label
+          >
+        </div>
+        <div class="file-list" id="fileList">
+          <!-- Create the space here where your uploaded image will be visible -->
+          <ul id="imageList">
+            <!-- Uploaded images will be displayed here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
